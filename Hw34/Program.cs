@@ -27,7 +27,7 @@ void PrintArray(int[] array)
     Console.WriteLine();
 }
 
-int[] randomАrray = CreateArrayRndInt(12, 100, 999);
+int[] randomАrray = CreateArrayRndInt(10, 100, 999);
 int Count(int[] randomАrray)
 {
     int count = 0;
@@ -39,4 +39,4 @@ int Count(int[] randomАrray)
     return count;
 }
 PrintArray(randomАrray);
-Console.WriteLine(Count(randomАrray));
+Console.WriteLine($"Количество чётных чисел в массиве -> {Count(randomАrray)}");
