@@ -5,7 +5,6 @@
 
 int[] CreateArrayRndInt(int size, int min, int max) 
 {
-    
     int[] array = new int[size];
     Random rnd = new Random();
 

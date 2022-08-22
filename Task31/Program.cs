@@ -7,7 +7,7 @@
 // положительных чисел равна 29, сумма отрицательных равна
 // -20.
 
-int[] CreateArrayRndInt(int size, int min, int max);
+int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] array = new int[size];
     Random rnd = new Random();
@@ -24,12 +24,12 @@ void PrintArray(int[] array)
     Console.Write("[");
     for (int i = 0; i < array.Lenght; i++)
     {
-        if (i < array.Length - 1) Console.Write($"{array[i]},"
-        else Console.Write($"{array[i] ");
+        if (i < array.Length - 1) Console.Write($"{array[i]},");
+        else Console.Write($"{array[i]}");
     }
     Console.Write("]");
-    Console.WriteLine
+    Console.WriteLine;
 }
 
-// int[] arr = CreateArrayRndInt(12? -9? 90);
-// PrintArray();
+int[] arr = CreateArrayRndInt(12, -9, 90);
+PrintArray();

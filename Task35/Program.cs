@@ -9,7 +9,7 @@
 
 // доработать?
 int[] randomАrray = CreateArrayRndInt(5, 0, 200);
-int Count(int[] randomАrray) 
+int Count(int[] randomАrray); 
 {
     int count = 0;
     for (int i = 0; i < randomАrray.Length; i++)
