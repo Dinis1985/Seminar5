@@ -36,14 +36,13 @@ int[] GetSumOddInd(int[] array)
 
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] < 0) sumNeg += array[i];
+        if (i % 2 != 1) sumNeg += array[i];
         else sumPos += array[i];
     }
 
     return new int[] { sumNeg, sumPos };
 }
-
-int[] arr = CreateArrayRndInt(12, -9, 9);
+int[] arr = CreateArrayRndInt(4, -99, 99);
 PrintArray(arr);
-int[] sumOddInd = int[] GetSumOddInd(arr);
-Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях (индексах) -> {sumOddInd[0]}");
+int[] sumOddInd = GetSumOddInd(arr);
+Console.WriteLine($"Сумма элементов, стоящих на нечётных позициях (индексах) -> {sumOddInd[1]}");
